@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.D.A.M</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <main>
+        <h1>A.D.A.M</h1>
+        <div id="meter" aria-live="polite" aria-atomic="true" tabindex="0">
+            <div id="volume-bar"></div>
+        </div>
+        <p id="decibel-level" tabindex="0">Decibels: 0 dB</p>
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+        <button id="History" onclick="History()">History</button>
+        <button id="logout" onclick="logout()">Log Out</button> <!-- Logout button -->
+        <div id="logs-container">
+            <h2>Recent Average Decibels</h2>
+            <ul id="logs"></ul>
+        </div>
+    </main>
+    <script src="script.js"></script>
+    <script>
+        // Function to handle logout
+        function logout() {
+            // Redirect to the login page
+            window.location.href = 'index.html';
+        }
+        function history() {
+            window.location.href = 'history.html';
+        }
+    </script>
+</body>
+</html>
